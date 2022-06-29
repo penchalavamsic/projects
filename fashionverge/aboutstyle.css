@@ -1,0 +1,59 @@
+body{
+	margin:10px;
+	padding: 10px;
+	font-weight: century gothic;
+	background:url("background.png") no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+@-o-viewport{
+    zoom: 1;
+    width: extend-to-zoom;
+}
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom:1.0;
+    
+}
+.container{
+	height:75vh;
+	width:30%;
+	background:rgba(0,0,0,.6);
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	padding:0 10px;
+}
+.img{
+	height:70px;
+	width:70px;
+	background:url("aboutlogo.jpg")no-repeat;
+	border-radius:50px;
+	background-size:cover;
+	background-position:center;
+	position:absolute;
+	top:0%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.container h1{
+	color:white;
+	margin-top:50px;
+}
+.container p1{
+	color:white;
+	margin-top:60px;
+	font-size:large;
+	font-family:maiandra GD
+}
+.container p2{
+	color:white;
+	font-family:brush script MT;
+	font-size:large;
+}
+.container a{
+	font-family:maiandra GD;
+	font-size:large;
+	color:whitesmoke;
+}

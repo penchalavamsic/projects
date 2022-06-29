@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>VIDEOS</title>
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <link rel="stylesheet"href="bvsvideostyle.css">
+        </head>
+        <body>
+            <nav>
+                <ul>
+                    <li><a href="file:///E:/fashionverge/index.html">HOME</a></li>
+                    <li><a href="file:///E:/fashionverge/outfits.html">OUTFITS</a></li>
+                    <li><a href="file:///E:/fashionverge/accessories.html">ACCESSORIES</a></li>
+                    <li><a href="file:///E:/fashionverge/bvsvideo.html">VIDEOS</a></li>
+                    <li><a href="file:///E:/fashionverge/bvswebabout.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            <div class="container">
+                <h1>#thefashionVerge</h1>
+                <div class="row">
+                    <div class="col">
+                        <div class="feature-img">
+                            <img src="bvsvideopic1.jpg" width="100%">
+                            <img src="playbtn.png"class="play-btn" onclick="playvideo('webbgvideo.mp4')">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="bvsvideopic2.jpg">
+                                <img src="playbtn.png"class="play-btn"onclick="playvideo('webvideo1.mp4')">
+                            </div>
+                            <p>Nice Guy V/S Bad Guy</p>
+                        </div>
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="bvsvideopic3.jpg">
+                                <img src="playbtn.png"class="play-btn"onclick="playvideo('webvideo2.mp4')">
+                            </div>
+                            <p>Decoding the famous looks</p>
+                        </div>
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="bvsvideopic4.jpg">
+                                <img src="playbtn.png"class="play-btn"onclick="playvideo('bvsvideo3.mp4')">
+                            </div>
+                            <p>Shoes you must have</p>
+                        </div>
+                        
+                       
+                    </div>
+
+                </div>
+            </div>
+            <marquee direction="left"behaviour="alternative"height="30%"><b>For regular video content subscribe to</b><a href="https://www.youtube.com/results?search_query=fashion+verge">THE FASHION VERGE </a><b>on YOUTUBE and activate Bell icon</b></mark></marquee>
+            <div class="video-player"id="video-player">
+                <video width="100%"controls autoplay id="myvideo">
+                    <source src="webbgvideo.mp4"type="video/mp4">
+                </video>
+                <img src="closebtn"class="close-btn" class="close-btn"
+                Onclick="stopvideo()">
+            </div>
+              <script>
+                  var videoplayer = document.getElementById("video-player")
+                  var myvideo = document.getElementById("myvideo")
+
+                   function stopvideo(){
+                        videoplayer.style.display="none";
+                    
+
+                   }
+                   function playvideo(file){
+                       myvideo.src = file;
+                       videoplayer.style.display = "block";
+                   }
+
+
+
+              </script>
+
+
+
+
+        </body>
+    </html>
